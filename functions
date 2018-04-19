@@ -1070,9 +1070,6 @@ setup_apt_sources () {
 		done
 		if [ "$cs" != "" ]; then echo "deb $m $SUITE$cs"; fi
 	done > "$TARGET/etc/apt/sources.list"
-
-	echo "deb [trusted=yes] http://ppa.launchpad.net/tobetter/ppa/ubuntu artful main"
-		>> "$TARGET/etc/apt/sources.list"
 }
 
 setup_etc () {
